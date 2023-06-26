@@ -33,7 +33,7 @@ main {
 }
 
 .character-card {
-  height: 15rem;
+  height: 14rem;
   margin-top: 0.5rem;
   width: 94vw;
   max-width: 230px;
@@ -72,7 +72,7 @@ main {
 }
 
 .avatar {
-  width: 15vh;
+  width: 13vh;
   border: 2px solid #000721;
   max-width: 100%;
   opacity: 0.8;
@@ -83,7 +83,7 @@ main {
 
 @media (min-width: 550px) {
   .avatar {
-    width: 25vh;
+    width: 20vh;
   }
 }
 
@@ -99,7 +99,7 @@ main {
 
 @media (min-width: 550px) {
   .health {
-    margin: 2vh 5%;
+    margin: 1vh 5%;
   }
 }
 
