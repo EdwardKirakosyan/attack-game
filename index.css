@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  font-family: "MedievalSharp", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -111,7 +111,7 @@ main {
   background: #171217;
   height: 1vh;
   width: 90%;
-  margin: 0 5%;
+  margin: 5px 5%;
   border-radius: 2px;
 }
 
@@ -119,6 +119,7 @@ main {
   background: #466d34;
   height: 100%;
   border-radius: 2px;
+  margin: 3px;
 }
 
 .health-bar-outer .health-bar-inner.danger {
@@ -177,20 +178,27 @@ main {
 button {
   margin-top: 0.5rem;
   font-family: "MedievalSharp", cursive;
-  background-color: #fcc02a;
-  border: 2px solid #963404;
+  background-color: #f8d06c;
+  border: 5px solid #f8d06c;
   outline: none;
   padding-left: 5vw;
   padding-right: 5vw;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.5rem;
-  border-radius: 6px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
-  color: #963404;
+  color: #cf4b09;
   height: 9vh;
   box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  color: #240c00;
+  background-color: #ffe5a4;
+  border: none;
 }
 
 @media (min-width: 550px) {
