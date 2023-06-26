@@ -11,8 +11,8 @@ function getNewMonster() {
 
 function attack() {
   if (!isWaiting) {
-    wizard.getDiceHtml()
-    monster.getDiceHtml()
+    wizard.setDiceHtml()
+    monster.setDiceHtml()
     wizard.takeDamage(monster.currentDiceScore)
     monster.takeDamage(wizard.currentDiceScore)
     render()
