@@ -11,13 +11,13 @@ function getNewMonster() {
 
 function attack() {
   if (!isWaiting) {
-    wizard.setDiceHtml()
+    robot.setDiceHtml()
     monster.setDiceHtml()
-    wizard.takeDamage(monster.currentDiceScore)
-    monster.takeDamage(wizard.currentDiceScore)
+    robot.takeDamage(monster.currentDiceScore)
+    monster.takeDamage(robot.currentDiceScore)
     render()
 
-    if (wizard.dead) {
+    if (robot.dead) {
       endGame()
     } else if (monster.dead) {
       isWaiting = true
@@ -37,13 +37,13 @@ function attack() {
 function endGame() {
   isWaiting = true
   const endMessage =
-    wizard.health === 0 && monster.health === 0
-      ? "No victors - all creatures are dead"
-      : wizard.health > 0
-      ? "The Wizard Wins"
+    robot.health === 0 && monster.health === 0
+      ? "💀 Everyone is dead 💀"
+      : robot.health > 0
+      ? "The Robot Wins"
       : "The monsters are Victorious"
 
-  const endEmoji = wizard.health > 0 ? "🔮" : "☠️"
+  const endEmoji = robot.health > 0 ? "🦾" : "☠️"
   setTimeout(() => {
     document.body.innerHTML = `
                 <div class="end-game">
@@ -58,10 +58,10 @@ function endGame() {
 document.getElementById("attack-button").addEventListener("click", attack)
 
 function render() {
-  document.getElementById("hero").innerHTML = wizard.getCharacterHtml()
+  document.getElementById("hero").innerHTML = robot.getCharacterHtml()
   document.getElementById("monster").innerHTML = monster.getCharacterHtml()
 }
 
-const wizard = new Character(characterData.hero)
+const robot = new Character(characterData.hero)
 let monster = getNewMonster()
 render()

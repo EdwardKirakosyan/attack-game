@@ -33,7 +33,7 @@ main {
 }
 
 .character-card {
-  height: 14rem;
+  height: 15rem;
   margin-top: 0.5rem;
   width: 94vw;
   max-width: 230px;
@@ -78,6 +78,7 @@ main {
   opacity: 0.8;
   border-radius: 10px;
   background-color: rgba(0, 7, 33, 0.8);
+  margin: auto;
 }
 
 @media (min-width: 550px) {
@@ -160,6 +161,8 @@ main {
   color: #000721;
   text-align: center;
   line-height: 6vh;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 @media (min-width: 550px) {
