@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   user-select: none;
@@ -24,10 +28,9 @@ main {
 @media (min-width: 550px) {
   main {
     flex-direction: row;
-    margin: 6vh 5vw;
     justify-content: center;
-    width: 86vw;
-    gap: 2rem;
+    width: 100%;
+    gap: 4em;
   }
 }
 
@@ -48,13 +51,7 @@ main {
     0px 0px 10px rgba(211, 211, 211, 0.845);
 }
 
-@media (min-width: 550px) {
-  .character-card {
-    border: 0.2rem solid rgba(211, 211, 211, 0.845);
-    height: 26rem;
-    width: 37vw;
-  }
-}
+
 
 .name {
   margin: 1vh 0;
@@ -63,12 +60,7 @@ main {
   font-size: 90%;
 }
 
-@media (min-width: 550px) {
-  .name {
-    margin: 2vh 0;
-    font-size: 100%;
-  }
-}
+
 
 .avatar {
   width: 13vh;
@@ -80,11 +72,7 @@ main {
   margin: auto;
 }
 
-@media (min-width: 550px) {
-  .avatar {
-    width: 20vh;
-  }
-}
+
 
 .health {
   font-size: 1.1rem;
@@ -96,11 +84,7 @@ main {
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 550px) {
-  .health {
-    margin: 1vh 5%;
-  }
-}
+
 
 .health b {
   font-weight: bold;
@@ -143,13 +127,7 @@ main {
   border-bottom-right-radius: 14px;
 }
 
-@media (min-width: 550px) {
-  .dice-container {
-    height: 30%;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
-}
+
 
 .dice,
 .placeholder-dice {
@@ -164,16 +142,6 @@ main {
   font-size: 25px;
   font-weight: bold;
   margin: 0 7px;
-}
-
-@media (min-width: 550px) {
-
-  .dice-container .dice,
-  .dice-container .placeholder-dice {
-    height: 10vh;
-    width: 10vh;
-    line-height: 10.5vh;
-  }
 }
 
 .dice-container .placeholder-dice {
@@ -206,12 +174,6 @@ button:active {
   box-shadow: none;
 }
 
-@media (min-width: 550px) {
-  button {
-    margin-top: 0;
-  }
-}
-
 button:focus {
   outline: 0;
 }
@@ -223,4 +185,55 @@ button:focus {
 
 .end-emoji {
   font-size: 80px;
+}
+
+@media (min-width: 550px) {
+
+  .dice-container .dice,
+  .dice-container .placeholder-dice {
+    height: 10vh;
+    width: 10vh;
+    line-height: 10.5vh;
+  }
+}
+
+@media (min-width: 550px) {
+  button {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 550px) {
+  .character-card {
+    border: 0.2rem solid rgba(211, 211, 211, 0.845);
+    height: 26rem;
+    width: 37vw;
+  }
+}
+
+@media (min-width: 550px) {
+  .name {
+    margin: 2vh 0;
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 550px) {
+  .avatar {
+    width: 20vh;
+  }
+}
+
+@media (min-width: 550px) {
+  .health {
+    margin: 1vh 5%;
+  }
+}
+
+@media (min-width: 550px) {
+  .dice-container {
+    height: 30%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
 }
