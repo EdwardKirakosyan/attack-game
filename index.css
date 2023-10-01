@@ -35,7 +35,7 @@ main {
 }
 
 .character-card {
-  height: 14rem;
+  height: 15rem;
   margin-top: 0.5rem;
   width: 94vw;
   max-width: 230px;
@@ -63,7 +63,7 @@ main {
 
 
 .avatar {
-  width: 13vh;
+  width: 15vh;
   border: 2px solid #000721;
   max-width: 100%;
   opacity: 0.8;
@@ -72,7 +72,11 @@ main {
   margin: auto;
 }
 
-
+@media (min-width: 550px) {
+  .avatar {
+    width: 20vh;
+  }
+}
 
 .health {
   font-size: 1.1rem;
@@ -84,7 +88,11 @@ main {
   letter-spacing: 0.03em;
 }
 
-
+@media (min-width: 550px) {
+  .health {
+    margin: 1vh 5%;
+  }
+}
 
 .health b {
   font-weight: bold;
