@@ -14,7 +14,7 @@ class Character {
   setDiceHtml() {
     this.currentDiceScore = getDiceRollArray(this.diceCount)
     this.diceHtml = this.currentDiceScore
-      .map((num) => `<div class="dice">${num}</div>`)
+      .map((num) => `<div class="dice"><p>${num}</p></div>`)
       .join("")
   }
 
