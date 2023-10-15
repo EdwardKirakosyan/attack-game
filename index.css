@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 html,
 body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  box-sizing: border-box;
   background: rgb(50, 50, 50);
   color: #fff;
   font-family: "Frijole", sans-serif;
@@ -11,19 +15,21 @@ body {
 
 main {
   display: flex;
-  width: 100%;
   margin: 0 auto;
-  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 6em;
+  flex-wrap: wrap;
 }
 
 .character-card {
   padding: 1em;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: .5em;
   font-size: 1.6rem;
-  color: white;
-  border-radius: 14px;
+  border-radius: 28px;
   background: radial-gradient(circle,
       rgb(72, 70, 73) 0%,
       rgb(0, 0, 0) 100%);
@@ -37,25 +43,26 @@ main {
 }
 
 .avatar {
-  max-width: 10em;
+  width: 75%;
   align-self: center;
-  border: 2px solid #000721;
-  border-radius: 10px;
+  border: none;
+  border-radius: 40px;
   background-color: rgba(0, 7, 33, 0.8);
 }
 
 .health {
-  font-size: 2rem;
-  font-weight: normal;
+  font-size: 1rem;
   width: 90%;
   text-align: left;
-  margin: 0.3vh 5%;
-  color: #ccc;
+  margin: 0.1vh 5%;
+  color: #909090;
   letter-spacing: 0.03em;
 }
 
 .health b {
-  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
   color: #fff;
 }
 
@@ -74,32 +81,35 @@ main {
 }
 
 .health-bar-outer .health-bar-inner.danger {
-  background: #d1435f;
+  background: red;
 }
 
 .dice-container {
   margin: 2em auto;
   display: flex;
-  gap: 1em;
+  gap: .5em;
   margin: auto;
-  background: #000721;
+  background: rgb(72, 70, 73) 0%, ;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
+  flex-wrap: wrap;
 }
 
 .dice,
 .placeholder-dice {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 3em;
   max-height: 3em;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 12px;
   border: 1px solid #666;
-  color: #000721;
+  color: rgb(49, 49, 49);
+  background-color: #bdbdbd;
   text-align: center;
-  font-size: 1em;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -107,26 +117,31 @@ main {
   background-color: transparent;
 }
 
+#actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   cursor: pointer;
-  margin-left: 9em;
+  color: #fff;
   padding: 0.7em 2em;
   border: none;
-  background-color: #eaeaea;
-  border-radius: 5px;
-  font-size: 1.6rem;
+  background: none;
+  border-radius: 7px;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 button:hover {
-  color: #240c00;
-  color: #ff0000;
+  color: red;
   border: none;
 }
 
 button:active {
   color: #ffffff;
-  background-color: #ff3e1c;
+  background: none;
   border: none;
 }
 
@@ -147,9 +162,7 @@ button:focus {
 @media (min-width: 400px) {
   .character-card {
     border: 0.2rem solid #000721;
-    min-height: 28rem;
-    width: 80%;
-    min-width: 300px;
+    width: 100%;
   }
 
   .name {
@@ -158,11 +171,7 @@ button:focus {
   }
 
   .avatar {
-    width: 25vh;
-  }
-
-  .health {
-    margin: 2vh 5%;
+    width: 30vh;
   }
 
   .dice-container {
@@ -177,9 +186,5 @@ button:focus {
     height: 10vh;
     width: 10vh;
     line-height: 10.5vh;
-  }
-
-  button {
-    margin-top: 1em;
   }
 }
