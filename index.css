@@ -20,7 +20,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 6em;
+  gap: 2em;
   flex-wrap: wrap;
 }
 
@@ -61,7 +61,7 @@ main {
 }
 
 .health b {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
   color: #fff;
