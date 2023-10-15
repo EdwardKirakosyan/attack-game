@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  user-select: none;
 }
 
 html,
@@ -43,7 +44,7 @@ main {
 }
 
 .avatar {
-  width: 75%;
+  width: 55%;
   align-self: center;
   border: none;
   border-radius: 40px;
@@ -171,7 +172,7 @@ button:focus {
   }
 
   .avatar {
-    width: 30vh;
+    width: 24vh;
   }
 
   .dice-container {
