@@ -168,6 +168,7 @@ button:focus {
   .character-card {
     border: 0.2rem solid #000721;
     width: 100%;
+    min-width: 300px;
   }
 
   .name {
