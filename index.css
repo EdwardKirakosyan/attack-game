@@ -21,7 +21,7 @@ main {
   align-items: center;
   height: 80%;
   gap: 2em;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;c */
 }
 
 .character-card {
