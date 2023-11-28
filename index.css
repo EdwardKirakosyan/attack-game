@@ -16,12 +16,10 @@ body {
 
 main {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   height: 80%;
   gap: 2em;
-  /* flex-wrap: wrap;c */
 }
 
 .character-card {
