@@ -11,7 +11,8 @@ body {
   margin: 0 auto;
   background: rgb(50, 50, 50);
   color: #fff;
-  font-family: "Frijole", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
 
 main {
@@ -41,6 +42,7 @@ main {
 
 .name {
   text-align: center;
+  font-family: "Frijole", sans-serif;
 }
 
 .avatar {
@@ -133,6 +135,8 @@ button {
   border-radius: 7px;
   font-size: 3rem;
   font-weight: bold;
+  font-family: "Frijole", sans-serif;
+
 }
 
 button:hover {
