@@ -8,7 +8,6 @@ html,
 body {
   display: flex;
   flex-direction: column;
-  /* margin: 0 auto; */
   background: rgb(50, 50, 50);
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -17,8 +16,7 @@ body {
 
 main {
   display: flex;
-  flex-direction: column;
-  /* margin: 0 auto; */
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   height: 80%;
@@ -39,7 +37,6 @@ main {
   border: 0.08rem solid #000721;
   box-shadow: inset 0px 0px 6px 2px rgba(100, 100, 100, 0.2),
     0px 0px 10px rgba(117, 182, 214, 0.2);
-  /* min-width: 600px; */
 }
 
 .name {
