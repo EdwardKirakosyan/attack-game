@@ -41,7 +41,7 @@ function endGame() {
       ? "💀 Everyone is dead 💀"
       : robot.health > 0
       ? "The Robot Wins"
-      : "The monsters are Victorious"
+      : "The Monsters are Victorious"
 
   const endEmoji = robot.health > 0 ? "🦾" : "☠️"
   setTimeout(() => {
@@ -50,8 +50,7 @@ function endGame() {
                     <h2>Game Over</h2> 
                     <h3>${endMessage}</h3>
                     <p class="end-emoji">${endEmoji}</p>
-                </div>
-                `
+                </div>`
   }, 1500)
 }
 
