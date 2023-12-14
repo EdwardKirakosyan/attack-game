@@ -81,7 +81,7 @@ main {
 }
 
 .health-bar-outer .health-bar-inner.danger {
-  background: red;
+  background: rgb(164, 0, 0);
 }
 
 .dice-container {
@@ -137,7 +137,7 @@ button {
 }
 
 button:hover {
-  color: red;
+  color: rgb(164, 0, 0);
   border: none;
 }
 

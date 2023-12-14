@@ -19,9 +19,9 @@ class Character {
   }
 
   takeDamage(attackScoreArray) {
-    const totalAttackScore = attackScoreArray.reduce(
-      (total, num) => total + num
-    )
+    const totalAttackScore = attackScoreArray.reduce((total, num) => {
+      return total + num
+    }, 0)
     this.health -= totalAttackScore
     if (this.health <= 0) {
       this.dead = true
@@ -32,12 +32,10 @@ class Character {
   getHealthBarHtml() {
     const percent = getPercentage(this.health, this.maxHealth)
     return `<div class="health-bar-outer">
-                    <div class="health-bar-inner ${
-                      percent < 26 ? "danger" : ""
-                    }" 
-                            style="width:${percent}%;">
-                    </div>
-                </div>`
+                <div class="health-bar-inner ${percent < 35 ? "danger" : ""}" 
+                        style="width:${percent}%;">
+                </div>
+            </div>`
   }
 
   getCharacterHtml() {
